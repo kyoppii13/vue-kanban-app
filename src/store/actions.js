@@ -9,7 +9,7 @@ export default{
       .then(({ token, userId }) => {
         commit(types.AUTH_LOGIN, { token, userId })
       })
-      .catch(err => { throw error })
+      .catch(err => { throw err })
   },
   fetchLists: ({ commit }) => {
     throw new Error('fetchLists action should be implemented')

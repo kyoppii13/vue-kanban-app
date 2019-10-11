@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import KbnButton from '@/components/atoms/KbnButton'
+import KbnButton from '@/components/atoms/KbnButton.vue'
 
 // メールアドレスフォーマット正規表現
 const REGEX_EMAIL = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -60,7 +60,7 @@ const required = val => !!val.trim()
 export default {
   name: 'KbnLoginForm',
 
-  compoents: {
+  components: {
     KbnButton
   },
 
